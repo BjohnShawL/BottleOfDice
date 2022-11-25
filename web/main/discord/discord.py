@@ -34,4 +34,4 @@ def roll(ctx, dice_roll: str, _sum: Sum):
 
 def build_discord_routes(d, app):
     d.set_route("/interactions", app)
-    d.update_commands(guild_id=getenv("TESTING_GUILD"), app=app)
+    # d.update_commands(guild_id=getenv("TESTING_GUILD"), app=app)
