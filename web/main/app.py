@@ -1,9 +1,8 @@
 from flask import Flask
 from flask_discord_interactions import DiscordInteractions
-from discord.discord import bp as discord_bp, build_discord_routes
+from .discord.discord import bp as discord_bp, build_discord_routes
 from .blog import blog
 from .config import Config
-from devtools import debug
 
 discord = DiscordInteractions()
 

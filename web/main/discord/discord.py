@@ -1,10 +1,7 @@
 import enum
-
-import devtools
-from flask import current_app
 from flask_discord_interactions import DiscordInteractionsBlueprint, Embed, Message, embed
 from os import getenv
-from discord.roll import process_command
+from .roll import process_command
 
 
 class Sum(enum.Enum):

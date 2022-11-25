@@ -1,7 +1,5 @@
-import dataclasses
 import re
 from random import randint
-from devtools import debug
 
 pattern = re.compile(' (?![+-])')
 
@@ -11,9 +9,7 @@ def process_command(arg_string: str, is_sum: bool) -> list[str]:
     arg_list = re.split(pattern, arg_string)
     for roll in arg_list:
         res = create_roll(roll, is_sum)
-        debug(res)
         results.append(res)
-    debug(results)
     return results
 
 
