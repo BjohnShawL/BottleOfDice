@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Status</title>
+</head>
+<body>
+<h2>Configuration Status</h2>
+    <table>
+<thead>
+  <tr>
+    <th>Key</th>
+    <th></th>
+    <th>Value</th>
+  </tr>
+</thead>
+<tbody>
+    {% for item in config.items() %}
+    <tr>
+        <td>{{item[0]}}</td>
+        <td>.............................................</td>
+        <td>{{item[1]}}</td>
+    </tr>
+    {% endfor %}
+</tbody>
+</table>
+
+</body>
+</html>
