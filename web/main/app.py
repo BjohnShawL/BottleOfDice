@@ -9,6 +9,7 @@ discord = DiscordInteractions()
 
 def create_app(config_class=Config):
     app = Flask(__name__)
+
     app.config.from_object(config_class)
     if not app.config.get('SITE_MODE'):
         discord.init_app(app)

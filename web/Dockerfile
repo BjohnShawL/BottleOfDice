@@ -6,4 +6,4 @@ COPY requirements.txt /code/
 RUN pip install -r requirements.txt
 COPY . /code/
 #CMD python run.py
-CMD gunicorn -c gunicorn_conf.py --bind 0.0.0.0:5000 -w 3 run:app
+CMD gunicorn -c gunicorn_conf.py --bind 0.0.0.0:5000 -w 3 --log-level 'debug' run:app
